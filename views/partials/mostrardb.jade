@@ -1,0 +1,26 @@
+
+
+
+h4  Mostrar DB coches_hibridos; tabla: hibridos  
+if filas.length == 0
+  p NO hay datos
+else
+  h4 tabla: hibridos  
+table
+  tr
+    th ID
+    th Marca
+    th Modelo
+    th Consumo(l/100)
+    th Potencia(cv)
+    th Presio(euros)
+    
+  for fila in filas
+    tr
+      td #{fila.id}
+      td #{fila.marca}
+      td #{fila.modelo}
+      td #{fila.consumo}
+      td #{fila.potencia_cv}
+      td #{fila.precio_euros}
+      

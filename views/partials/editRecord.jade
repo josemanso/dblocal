@@ -1,0 +1,16 @@
+form(action='/edit', method= 'post')
+  p Registro a cambiar, se modificará el registro, id, a los nuevos valores introducidos
+  label ID:
+  input(name = 'id' size = '5') 
+  br
+  label Marca:
+  input(type="text" name = 'marca' size = "10")
+  label Modelo
+  input(type="text" name ='modelo' size = "10")
+  label Consumo L/100:
+  input(type="text" name ='consumo' size = "8")
+  label Potencia cv:
+  input(type="texy" name = 'potencia' size = "6")
+  label Precio:
+  input(type="text" name ='precio' size = "5")
+  input(type = 'submit', value = 'Cambiar')

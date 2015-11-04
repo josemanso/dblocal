@@ -1,0 +1,7 @@
+
+form(action='/borrar', method = 'post')
+  //label Modelo:
+  label ID:
+  input(name = 'id' size = '5')
+  input(type = "hidden" name="_method" value="DELETE")
+  button(type = "submit" onClick = "return confirm( 'Borrar este registro? ')")   Borrar
